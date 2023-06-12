@@ -10,9 +10,10 @@
         android:layout_width="50dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        tools:srcCompat="@tools:sample/avatars"
         android:contentDescription="@string/weather_condition_image"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitCenter"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="0dp"
@@ -26,7 +27,7 @@
             android:id="@+id/dayTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Texto grande"
+            android:text="@string/texto_grande"
             app:layout_column="0"
             app:layout_columnSpan="3" />
 
